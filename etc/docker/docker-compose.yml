@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+
+  db:
+    container_name: postgres-1
+    build:
+      context: ../postgres
+      dockerfile: ../docker/postgres/postgres.dockerfile
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    restart: always
