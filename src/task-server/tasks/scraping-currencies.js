@@ -5,7 +5,7 @@ const cheerio = require('cheerio')
 
 const amqp = require('amqp-connection-manager')
 
-const connection = amqp.connect(['amqp://crm:crm@localhost'])
+const connection = amqp.connect(['amqp://app:app@localhost'])
 
 module.exports = handler
 

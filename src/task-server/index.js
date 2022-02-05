@@ -9,7 +9,7 @@ const tasks = glob.sync('**/tasks/*.js', { cwd: __dirname }).map(path => ({
   instance: require(`${__dirname}/${path}`),
 }))
 
-const connection = amqp.connect(['amqp://crm:crm@localhost'])
+const connection = amqp.connect(['amqp://app:app@localhost'])
 
 connection.on('connect', function() {
   console.log('Connected!') //eslint-disable-line
