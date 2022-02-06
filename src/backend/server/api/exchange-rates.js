@@ -8,6 +8,7 @@ const router = module.exports = Router()
 router.post('/exchange-rates', checkAuth, async (req, res, next) => {
   try {
     const body = req.body
+    console.log(new Date(), '/exchange-rates', body)// eslint-disable-line
     const result = await getBankExchangeRatesByBank(body, res)
     res.send(result)
   } catch (error) {

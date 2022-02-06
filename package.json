@@ -56,7 +56,6 @@
     "require-all": "^3.0.0",
     "resolve-url-loader": "^3.1.1",
     "style-resources-loader": "^1.5.0",
-    "vue-cli-plugin-style-resources-loader": "^0.1.4",
     "vue-eisen-request": "^1.0.4",
     "vue-resize-directive": "^1.2.0",
     "x-frame-bypass": "^1.0.2"
