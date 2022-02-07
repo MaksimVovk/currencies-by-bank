@@ -10,6 +10,7 @@ app.use(staticFileMiddleware)
 
 app.use(cors({
   origin: (origin, callback) => callback(null, true),
+  allowedHeaders: ["Content-Type", "Access-Control-Allow-Origin", "x-auth-token", "Authorization", "Access-Control-Allow-Methods", "Access-Control-Request-Headers", ],
   credentials: true,
 }))
 
