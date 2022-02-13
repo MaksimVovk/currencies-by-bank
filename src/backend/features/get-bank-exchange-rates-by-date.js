@@ -28,4 +28,5 @@ module.exports = function (params, res) {
       'e.date': params.date,
       'b.id': params.bank_id,
     })
+    .orderByRaw('date, bank_id')
 }
