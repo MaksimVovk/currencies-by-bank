@@ -29,4 +29,5 @@ module.exports = function (params, res) {
       'b.id': params.bank_id,
     })
     .whereBetween('e.date', [params.start_date, params.end_date])
+    .orderByRaw('date, bank_id')
 }
