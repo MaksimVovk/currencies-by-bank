@@ -23,6 +23,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
   extended: true
 }))
+app.use('/', require(`${__dirname}/api/all-exchange-rates-by-range`))
 app.use('/', require(`${__dirname}/api/exchange-rates-by-range`))
 app.use('/', require(`${__dirname}/api/exchange-rates`))
 app.use('/', require(`${__dirname}/api/bank-list`))
